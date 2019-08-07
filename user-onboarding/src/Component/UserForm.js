@@ -44,7 +44,7 @@ validationSchema: Yup.object().shape({
       .email("Email is not valid")
       .required("Email is required"),
     password: Yup.string()
-      .min(16, "Password must be 10characters or longer")
+      .min(8, "Password must be 8 characters or longer")
       .required("Password is required")
   }), 
  handleSubmit(values, {resetForm}){
