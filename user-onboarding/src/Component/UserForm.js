@@ -49,7 +49,7 @@ validationSchema: Yup.object().shape({
       .required("Password is required")
   }), 
  handleSubmit(values, {resetForm}){
-   const results = axios.post(`https://reqres.in/api/users_` , values) 
+   const results = axios.post("https://reqres.in/api/users" , values) 
    console.log(values)
    results.then(res => {
        console.log(res)
