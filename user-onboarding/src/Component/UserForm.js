@@ -48,17 +48,15 @@ validationSchema: Yup.object().shape({
       .min(16, "Password must be 10characters or longer")
       .required("Password is required")
   }), 
- handleSubmit(values, {resetForm, setSubmitting}){
+ handleSubmit(values, {resetForm}){
    const results = axios.post(`https://reqres.in/api/users_` , values) 
    console.log(values)
    results.then(res => {
        console.log(res)
        resetForm();
-       setSubmitting(false);
    })
    .catch(error => {
        console.log(error);
-       setSubmitting(false);
    })
  }
 })(UserForm)
