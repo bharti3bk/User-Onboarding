@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  background: url("../src/Minimal_Space_Planets-627547.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size:100% 100%;;
+}   
+#lableOne , #lableTwo , #lableThree , #lableFour {
+  color: aliceblue;
+  text-align: left;
+}  
+
+#message , #messageTwo{
+  color: white;
+}
+
+.field{
+  width: 300px;
+} 
+#formikForm{
+  margin-left: 35%;;
+  margin-top:1%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
